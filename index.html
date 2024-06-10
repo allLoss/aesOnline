@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>aes加密解密</title>
+
+	<meta http-equiv="Content-Language" content="zh-CN">
+	<meta name="keywords" content="aes在线加密，aes">
+
+
+	<link rel="stylesheet" href="./basic.css" type="text/css">
+	<link rel="stylesheet" href="./bootstrap.min.css">
+	
+
+</head>
+
+<body>
+
+	<div>
+
+
+		<div class="wrapper ad-wrap" style="margin-top: 15px">
+		</div>
+
+		<div id="mainContent" class="wrapper">
+			<div class="toolName">AES-256-CBC加密解密</div>
+			<p>iv自动随机生成，并嵌入密文当中。因此不需要记住iv</p>
+			<div class="toolUsing clearfix">
+				<div class="toolsTab  clearfix">
+					<ul class="nav nav-tabs">
+						<li class="active"></li>
+
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<style>
+					.leftBar .title,
+					.rightBar .title {
+						margin-bottom: 10px;
+					}
+
+					.OptDetail {
+						text-align: left;
+						margin-left: 10px;
+					}
+
+					.OptDetail li {
+						width: 120px;
+						margin: 5px 0px 10px 0px;
+					}
+
+					.Button input {
+						margin: 5px 0px 10px 0px;
+					}
+
+					#pwd {
+						width: 110px;
+					}
+				</style>
+				<div class="leftBar">
+					<div class="title">明文:</div>
+					<textarea id="plaintext"></textarea>
+				</div>
+
+				<div class="operateLR">
+					<div class="OptDetail">
+
+					</div>
+					<div class="OptDetail Button">
+
+						<label class="input">密码:
+							<input type="text" id="pwd">
+						</label>
+						<label class="input">密文编码</label>
+						<select name="编码" id="ciphertextCode" style="width: 95%;">
+							<option value="base64">base64</option>
+							<option value="hex">hex</option>
+
+						</select>
+						<ul>
+							<li><button id='buttonEncrypt' class="btn btn-primary">加密 》<i
+										class="icon-chevron-right icon-white"></i></button></li>
+							<li><button id='buttonDecrypt' class="btn btn-primary"><i
+										class="icon-chevron-left icon-white"></i>《 解密</button></li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="rightBar">
+					<div class="title">密文:
+
+					</div>
+					<textarea id="ciphertext"></textarea>
+				</div>
+
+			</div>
+
+		</div>
+	
+	</div>
+	<script type="text/javascript" src="./encrypt.js"></script>
+</body>
+
+</html>
